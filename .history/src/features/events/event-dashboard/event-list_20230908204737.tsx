@@ -1,9 +1,8 @@
 import EventListItems from "./event-list-item";
-// import { sampleData } from "../../../app/api/index";
+import { sampleData } from "../../../api/index.js";
 
 const EventList = () => {
-  const sampleData = [""];
-
+  const sampleData = ["Tokyo"];
   return (
     <>
       <EventListItems data={sampleData} />

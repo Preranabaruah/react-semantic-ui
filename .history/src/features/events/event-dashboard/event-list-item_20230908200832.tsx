@@ -1,8 +1,7 @@
 import { Item, Segment, Icon, List, Button } from "semantic-ui-react";
 import EventListAttendee from "./event-list-attendee";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const EventListItems = ({ data }: any) => {
+const EventListItems = (props: any) => {
   return (
     <>
       <Segment.Group>
@@ -11,7 +10,7 @@ const EventListItems = ({ data }: any) => {
             <Item>
               <Item.Image size="tiny" circular src="/public/assets/user.png" />
               <Item.Content>
-                <Item.Header content={data} />
+                <Item.Header content={props.data} />
                 <Item.Description>Hosted by Bob</Item.Description>
               </Item.Content>
             </Item>

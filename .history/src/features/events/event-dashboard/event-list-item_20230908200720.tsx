@@ -1,7 +1,6 @@
 import { Item, Segment, Icon, List, Button } from "semantic-ui-react";
 import EventListAttendee from "./event-list-attendee";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const EventListItems = ({ data }: any) => {
   return (
     <>

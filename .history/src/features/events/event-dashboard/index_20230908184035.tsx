@@ -1,13 +1,14 @@
 import { Grid } from "semantic-ui-react";
 import EventList from "./event-list";
 import EventForm from "../event-form";
+import { sampleData } from "../../../api/index.js";
 
 const EventDashboard = () => {
   return (
     <>
       <Grid>
         <Grid.Column width={10}>
-          <EventList />
+          <EventList events={sampleData} />
         </Grid.Column>
         <Grid.Column width={6}>
           <EventForm />
